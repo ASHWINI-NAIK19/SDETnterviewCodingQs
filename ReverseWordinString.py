@@ -2,6 +2,17 @@
 #hello world
 #world hello
 
+#using loop
+def revWord():
+    s=input("Enter string:")
+    st=s.split()
+    rev=''
+    for word in st:
+        rev=word+" "+rev
+    print(rev)
+revWord()
+
+#using join() and slicing
 def revWord():
     s=input("Enter string:")
     st=s.split()
